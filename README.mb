@@ -1,0 +1,31 @@
+# Python Network Scanner (Scapy)
+
+Este es un escaneador de puertos multihilos desarrollado con Python, Se utilizo la libreria de **Scapy** con esta herramienta puede realizar un escaneo de tipo **TCP SYN Scan**,
+logrando identificar puertos abiertos de un host de manera eficiente
+
+## Características
+
+- **Escaneo Sigiloso (Half-open):** Utiliza paquetes TCP con flag "S" (SYN) para identificar estados de puertos.
+- **Multithreading:** Implementación de `ThreadPoolExecutor` para procesar múltiples puertos en paralelo, reduciendo drásticamente el tiempo de ejecución.
+- **Manejo de Paquetes:** Análisis de capas de red y transporte para diferenciar entre puertos abiertos, cerrados o filtrados por el firewall.
+
+## Requisitos
+- Python 3.X
+- Scapy
+
+Para instalar las dependencias, ejecuta:
+
+```bash
+pip install -r requirements.txt
+
+## Uso 
+
+Para correr el escaneador ejecuta el siguente comando:
+sudo python scanner.py (Necesita permisos de administrador para funcionar correctamente)
+
+## Disclairmer
+
+Esta herramienta fue creada exclusivamente con fines educativos y para ser usada en auditoria etica, el uso de este software contra objetivos sin autorizacion previa es ilegal.
+No me hago responsable del mal uso de esta herramienta
+
+Desarrollado por Miguel Sebastian Mendoza Choquehuanca
